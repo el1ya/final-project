@@ -1,0 +1,468 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+}
+.container{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+}
+
+/* Foundation */
+.foundation{
+    display: flex;
+}
+.right-side{
+    justify-content: space-between;
+    margin-left: 25px;
+}
+.left-side{
+    justify-content: space-between;
+}
+.n2{
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+}
+
+/* Header */
+.header{
+    display: flex;
+    padding: 5px 30px 0px 30px;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    height: 45px;
+    text-transform: uppercase;
+}
+.header-right{
+    display: flex;
+}
+.header p{
+    margin-left: 0.5em;
+    margin-right: 1em;
+    font-size: 15px;
+    padding-top: 12px;
+    text-transform: uppercase;
+}
+.header-left{
+    display: flex;
+}
+.he{
+    display: flex;
+}
+.navbar{
+    display: flex;
+    height: 100px;
+    padding: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.navbar-center{
+    display: block;
+    margin:0px 150px;
+}
+.navbar-center img{
+    width: 80px;
+    height: 80px;
+    margin-left: 550px;
+}
+.navbar-right{
+    display: flex;
+    margin-top: 20px;
+}
+.navbar-right p{
+    margin-right: 15px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Icons */
+.icon-1{
+    font-size: 18px;
+    height: 20px;
+    width: 20px;
+    padding: 10px 5px;
+}
+
+.home{
+    display: flex;
+    height: 60px;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(247, 245, 245);
+    color:darkgray;
+    margin-top: 20px;
+}
+
+/* Table */
+.table{
+    margin: 30px 0px 30px 30px;
+}
+#td1{
+    width: 45vw;
+    height: 280px;
+    text-align: center;
+}
+#td2{
+    width: 45vw;
+    text-align: center;
+}
+
+/* Slider */
+
+#slider {
+	display: block;
+	position: relative;
+}
+#slider #prev,
+#slider #next {
+	background-color: rgba(0,0,0,0.5);
+	color: #FFF;
+	display: inline-block;
+	font-size: 32px;
+	height: 48px;
+	line-height: 42px;
+	opacity: 0;
+	padding: 0;
+	position: absolute;
+	text-align: center;
+	top: calc(50% - 24px);
+	transition: 0.2s all;
+	width: 48px;
+	z-index: 4;
+}
+#slider #next {
+	right: 0;
+}
+#slider #prev{
+    left: 0;
+}
+#slider:hover #prev,
+#slider:hover #next{
+	opacity: 1;
+}
+#slider .image {
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top:0;
+	transition: 0.8s all;
+	z-index: 0;
+	width: 100%;
+}
+#slider .image:first-of-type,
+#slider .image.active {
+	opacity: 1;
+	z-index: 1;
+}
+#slider .image img {
+	height: auto;
+	width: 100%;
+}
+
+/* Description */
+#tit{
+    padding: 10px 0px;
+    font-size: 30px;
+}
+.price{
+    color: rgb(216, 21, 21);
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+.text{
+    line-height: 1.5;
+    font-size: 17px;
+}
+
+/* Brends */
+.brends-title , .best-sellers{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    color: #1b1b1b;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 35px;
+    letter-spacing: 1px;
+}
+.brends{
+    display: flex;
+    justify-content: space-between;
+    width: 190px;
+    height: 190px;
+}
+.n1{
+    padding: 5px;
+}
+
+
+/* Contacts */
+.contacts{
+    background-color: rgba(0,0,0,0.9);
+    height: 40vh;
+}
+.contact-pic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	height: 60vh;
+	width: 100%;
+    margin-top: 5%;
+    background: url(../imagesfinal/bgr.jpg);
+    background-size: cover;
+    position: absolute;
+}
+.icon-info{
+    width: 100px;
+    height: 100px;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 100px;
+}
+.contact-info{
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+    top: 10%;
+    transform: translateY(-50%);
+}
+
+
+/* Mobile adaptation////////////////////////////////////////////////////////////////////////////// */
+@media (max-width: 768px) {
+
+
+/* Table */
+.table{
+    margin: 30px 0px 30px 30px;
+}
+#td1{
+    width: 210vw;
+    height: 1110px;
+}
+#td2{
+    display: none;
+}
+
+/* Foundation */
+.foundation{
+    display: flex;
+    width: 3020px;
+}
+.left-side{
+    justify-content: space-between;
+}
+.n2{
+    width: 350px;
+    height: 350px;
+    margin-top: 50px;
+}
+
+/* Header */
+.header{
+    height: 110px;
+    width: 3020px;
+}
+.header p{
+    margin-left: 15px;
+    margin-right: 20px;
+    font-size: 40px;
+    padding-top: 33px;
+}
+.navbar{
+    display: flex;
+    height: 200px;
+    padding: 20px;
+    font-size: 45px;
+    align-items: center;
+}
+.navbar-center{
+    margin:0px 620px;
+}
+.navbar-center img{
+    width: 200px;
+    height: 200px;
+    margin-left: 800px;
+}
+/* Icons */
+.icon-1{
+    height: 50px;
+    width: 50px;
+    padding: 25px 10px 5px 5px;
+}
+.home{
+    height: 100px;
+    margin-top: 20px;
+    width: 3090px;
+    font-size: 60px;
+}
+   
+/* Description */
+#tit{
+    padding: 10px 0px;
+    font-size: 100px;
+}
+.price{
+    font-size: 110px;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+.text{
+    line-height:normal;
+    font-size: 60px;
+}
+hr{
+    display: none;
+}
+    
+/* Brends */
+.brends-title , .best-sellers{
+    font-size: 55px;
+}
+.brends{
+    width: 380px;
+    height: 380px;
+    margin-left: 15px;
+}
+.brends-title{
+    padding-top: 30px;
+    padding-left: 1525px;
+}
+    
+    
+/* Contacts */
+.contacts{
+    height: 50vh;
+    width: 3050px;
+}
+.contact-pic{
+    height: 70vh;
+    width: 3050px;
+    margin-top: 5%;
+}
+.icon-info{
+    width: 150px;
+    height: 150px;
+}
+.contact-info{
+    top: 15%;
+}
+}
+
+
+
+/* Mobile adaptation ///////////////////////////////////////////////////////*/
+@media (max-width: 320px) {
+   
+    
+    /* Header */
+    .header{
+        height: 150px;
+        width: 1225px;
+    }
+    .header-right p{
+        display: none;
+    }
+    .navbar-center{
+        margin:0px;
+    }
+    .navbar-center img{
+        margin-left: 550px;
+    }
+    .navbar-right{
+        margin-left: 80px;
+        margin-top: 0px;
+    }
+    .home{
+        height: 100px;
+        margin-top: 20px;
+        width: 1280px;
+        font-size: 60px;
+    }
+    .home p{
+        display: none;
+    }
+    .icon-1{
+        height: 100px;
+        width: 100px;
+    }
+    .he{
+        display: none;
+    }
+
+/* Table */
+.table{
+    margin: 30px 0px 30px 30px;
+}
+#td1{
+    width: 1200vw;
+    height: 800px;
+}
+#td2{
+    display: none;
+}
+
+/* Foundation */
+.foundation{
+    display: flex;
+    width: 1280px;
+}
+.n2{
+    width: 170px;
+    height: 170px;
+}
+
+/* Description */
+#tit{
+    padding: 10px 0px;
+    font-size: 60px;
+}
+.price{
+    font-size: 70px;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+.text{
+    line-height:normal;
+    font-size: 60px;
+}
+
+
+     /* Brends */
+     .brends-title , .best-sellers{
+        font-size: 50px;
+    }
+    .brends{
+        width: 160px;
+        height: 160px;
+        margin-left: 10px;
+    }
+    .brends-title{
+        padding-left: 650px;
+    }
+
+    /* Contacts */
+    .contacts{
+        height: 100vh;
+        width: 1280px;
+    }
+    .contact-pic{
+        height: 60vh;
+        width: 1280px;
+        margin-top: 5%;
+    }
+    .icon-info{
+        width: 150px;
+        height: 150px;
+    }
+    .contact-info{
+        top: 20%;
+    }
+}
