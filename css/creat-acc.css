@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+    
+}
+.body{
+    min-height: 100vh;
+}
+/* Header */
+.header{
+    display: flex;
+    padding: 0px 30px 0px 30px;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    height: 50px;
+    text-transform: uppercase;
+}
+.header-right{
+    display: flex;
+}
+.header p{
+    margin-left: 0.5em;
+    margin-right: 1em;
+    font-size: 15px;
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+.header-left{
+    display: flex;
+}
+.he{
+    display: flex;
+}
+.navbar{
+    display: flex;
+    height: 100px;
+    padding: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+.navbar-center{
+    display: block;
+    margin:0px 150px;
+}
+.navbar-center img{
+    width: 80px;
+    height: 80px;
+    margin-left: 550px;
+}
+.navbar-right{
+    display: flex;
+    margin-top: 20px;
+}
+.navbar-right p{
+    margin-right: 1em;
+    cursor: pointer;
+    color: #333;
+}
+.ic{
+    font-size: 18px;
+    height: 20px;
+    width: 20px;
+    margin: 0px;
+}
+.home{
+    display: flex;
+    height: 60px;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(247, 245, 245);
+    color:darkgray;
+    margin-top: 20px;
+}
+
+/* Forms */
+.container{
+    background-color: white;
+    overflow: hidden;
+    width: 800px;
+    max-width: 100%;
+    font-size: 16px;
+    max-width: 500px;
+    margin: auto;
+    box-sizing: border-box;
+}
+.container h1,input,a,button{
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.container p{
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.container .footer{
+    display: grid;
+    justify-content: flex-start;
+}
+.container .footer .newsletter small{
+    font-size: 13px;
+    color: grey;
+    padding: 1rem;
+}
+.container .footer .newsletter input{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+}
+.container .footer .butt{
+    display: grid;
+}
+.container .footer .butt button{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+.container .footer .butt button:hover{
+    background-color: #333;
+}
+.container .footer .butt a{
+    font-size: 14px;
+    color: black;
+}
+.errormsg{
+    color: #e74c3c;
+    font-size: 15px;
+}
+
+/* Contacts */
+.contacts{
+    background-color: rgba(0,0,0,0.9);
+    height: 40vh;
+}
+.contact-pic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	height: 60vh;
+	width: 100%;
+    margin-top: 5%;
+    background: url(../imagesfinal/bgr.jpg);
+    background-size: cover;
+    position: absolute;
+}
+.icon-info{
+    width: 100px;
+    height: 100px;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 100px;
+}
+.contact-info{
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+    top: 10%;
+    transform: translateY(-50%);
+}
+
+
+
+
+
+
+/* Mobile adaptation////////////////////////////////////////////////////////// */
+@media (max-width: 768px) {
+
+    /* Header */
+    .header{
+        height: 100px;
+        width: 2550px;
+    }
+    .header p{
+        margin-left: 15px;
+        margin-right: 20px;
+        font-size: 30px;
+        padding-top: 33px;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        height: 200px;
+        padding: 20px;
+        font-size: 35px;
+    }
+    .navbar-center{
+        margin:0px 620px;
+    }
+    .navbar-center img{
+        width: 150px;
+        height: 150px;
+        margin-left: 550px;
+    }
+    /* Icons */
+    .ic{
+        height: 50px;
+        width: 50px;
+    }
+    .home{
+        height: 100px;
+        margin-top: 20px;
+        width: 2550px;
+        font-size: 60px;
+    }
+    
+    
+/* Forms */
+.container{
+    width: 1100px;
+    font-size: 30px;
+    max-width: 2550px;
+    margin-left: 700px;
+}
+label{
+    font-size: 50px;
+}
+#radio{
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+}
+#check{
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+}
+.container h1,input,a,button{
+    height: 70px;
+    font-size: 45px;
+}
+.container p{
+    height: 70px;
+    font-size: 45px;
+}
+.container .footer .newsletter small{
+    font-size: 30px;
+}
+.container .footer .newsletter input{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+}
+.container .footer .butt a{
+    font-size: 45px;
+}
+    
+    /* Contacts */
+    .contacts{
+        height: 80vh;
+        width: 2600px;
+    }
+    .contact-pic{
+        height: 60vh;
+        width: 2600px;
+        margin-top: 5%;
+    }
+    .icon-info{
+        width: 150px;
+        height: 150px;
+    }
+    .contact-info{
+        top: 20%;
+    }
+    }
+
+
+
+/* Mobile adaptation///////////////////////////////////////////////////// */
+@media (max-width: 320px) {
+   
+    
+    /* Header */
+    .header{
+        height: 150px;
+        width: 1225px;
+    }
+    .header-right p{
+        display: none;
+    }
+    .navbar-center{
+        margin:0px 0px;
+    }
+    .navbar-right{
+        display: none;
+    }
+    .home{
+        height: 100px;
+        margin-top: 20px;
+        width: 1280px;
+        font-size: 60px;
+    }
+    .home p{
+        display: none;
+    }
+    .ic{
+        height: 100px;
+        width: 100px;
+    }
+    .he{
+        display: none;
+    }
+    
+/* Account */
+.container{
+    width: 1280px;
+    font-size: 70px;
+    max-width: 1280px;
+    margin-left: 15px;
+}
+label{
+    font-size: 50px;
+}
+#radio{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+#check{
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+}
+.container h1,input,button{
+    height: 80px;
+    font-size: 60px;
+    margin: 75px 0px;
+}
+.container p{
+    height: 70px;
+    font-size: 70px;
+}
+.container .footer .newsletter small{
+    font-size: 55px;
+}
+.container .footer .newsletter input{
+    width: 40px;
+    height: 40px;
+    margin: 100px 0px;
+}
+.container .footer .butt a{
+    font-size: 60px;
+    margin-left: 150px;
+} 
+    
+    /* Contacts */
+    .contacts{
+        height: 100vh;
+        width: 1280px;
+    }
+    .contact-pic{
+        height: 60vh;
+        width: 1280px;
+        margin-top: 5%;
+    }
+    .icon-info{
+        width: 150px;
+        height: 150px;
+    }
+    .contact-info{
+        top: 20%;
+    }
+}
