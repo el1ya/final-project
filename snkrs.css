@@ -1,0 +1,662 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+}
+.container{
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header{
+    display: flex;
+    padding: 5px 30px 0px 30px;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    height: 45px;
+    text-transform: uppercase;
+}
+.header-right{
+    display: flex;
+}
+.header p{
+    margin-left: 0.5em;
+    margin-right: 1em;
+    font-size: 15px;
+    padding-top: 12px;
+    text-transform: uppercase;
+}
+.header-left{
+    display: flex;
+}
+.he{
+    display: flex;
+}
+.navbar{
+    display: flex;
+    height: 100px;
+    padding: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.navbar-center{
+    display: block;
+    margin:0px 150px;
+}
+.navbar-center img{
+    width: 80px;
+    height: 80px;
+    margin-left: 550px;
+}
+.navbar-right{
+    display: flex;
+    margin-top: 20px;
+}
+.navbar-right p{
+    margin-right: 15px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Icons */
+.icon-1{
+    font-size: 18px;
+    height: 20px;
+    width: 20px;
+    padding: 10px 5px;
+}
+
+/* Slider */
+
+#slider {
+	display: block;
+	position: relative;
+}
+#slider #prev,
+#slider #next {
+	background-color: rgba(0,0,0,0.5);
+	color: #FFF;
+	display: inline-block;
+	font-size: 32px;
+	height: 48px;
+	line-height: 42px;
+	opacity: 0;
+	padding: 0;
+	position: absolute;
+	text-align: center;
+	top: calc(50% - 24px);
+	transition: 0.2s all;
+	width: 48px;
+	z-index: 4;
+}
+#slider #next {
+	right: 0;
+}
+#slider:hover #prev,
+#slider:hover #next{
+	opacity: 1;
+}
+#slider .image {
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top:0;
+	transition: 0.8s all;
+	z-index: 0;
+	width: 100%;
+}
+#slider .image:first-of-type,
+#slider .image.active {
+	opacity: 1;
+	z-index: 1;
+}
+#slider .image img {
+	height: auto;
+	width: 100%;
+}
+
+/* Option */
+.options{
+    display: flex;
+    padding: 25px;
+    margin: 20px;
+    justify-content: space-between;
+}
+.opti{
+    width: 349px;
+    height: 234px;
+}
+.home-categ-title{
+    text-shadow: 0 0 10px #222;
+    color: #fff;
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+    text-align: center;
+    bottom: 20px;
+    left: 0;
+}
+.mens_sneakers .womens_sneakers .accessories{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 20px;
+    left: 0;
+}
+
+/* Brends */
+.brends-title , .best-sellers{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    color: #1b1b1b;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 35px;
+    letter-spacing: 1px;
+}
+.brends{
+    display: flex;
+    justify-content: space-between;
+    width: 190px;
+    height: 190px;
+}
+.n1{
+    padding: 5px;
+}
+
+
+/* Best sellers  */
+#p10:hover{
+	display: inline-flex;
+	width: 350px;
+    height: 350px;
+    padding: 11px;
+	background: url(../imagesfinal/photo_2022-12-19_16-30-56\ \(2\).jpg) no-repeat;
+	background-size: cover;
+}
+#p10{
+	display:inline-flex;
+	width: 350px;
+    height: 350px;
+    padding: 11px;
+	background: url(../imagesfinal/photo_2022-12-19_16-30-56.jpg) no-repeat;
+	background-size: cover;
+}
+#p20:hover{
+	display: inline-flex;
+	width: 350px;
+    height: 350px;
+    padding: 11px;
+	background: url(../imagesfinal/photo_2022-12-19_17-18-48.jpg) no-repeat;
+	background-size: cover;
+}
+#p20{
+	display: inline-flex;
+	width: 350px;
+    height: 350px;
+    padding: 11px;
+	background: url(../imagesfinal/photo_2022-12-19_16-33-19.jpg) no-repeat;
+	background-size: cover;
+}
+#p30:hover{
+	display: inline-flex;
+	width: 350px;
+    height: 350px;
+    padding: 11px;
+	background: url(../imagesfinal/photo_2022-12-19_16-33-20\ \(2\).jpg) no-repeat;
+	background-size: cover;
+}
+#p30{
+	display: inline-flex;
+	width: 350px;
+    height: 350px;
+    padding: 11px;
+	background: url(../imagesfinal/photo_2022-12-19_16-33-19\ \(3\).jpg) no-repeat;
+	background-size: cover;
+}#p40:hover{
+	display: inline-flex;
+	width: 350px;
+    height: 350px;
+    padding: 11px;
+	background: url(../imagesfinal/photo_2022-12-19_16-47-08.jpg) no-repeat;
+	background-size: cover;
+}
+#p40{
+	display: inline-flex;
+	width: 350px;
+    height: 350px;
+    padding: 11px;
+	background: url(../imagesfinal/photo_2022-12-19_16-47-07.jpg) no-repeat;
+	background-size: cover;
+}
+.snk-title{
+    display: inline-block;
+    width: 361px;
+    height: 150px;
+    padding: 0px 5px;
+    color: rgba(0,0,0,0.5);
+}
+#tit, .price{
+    padding: 10px 10px;
+    font-size:x-large;
+    color: black;
+}
+p{
+    padding-left: 10px;
+}
+
+/* Description */
+.about-snkrs{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    margin: 50px;
+    margin-left: 300px;
+}
+.about-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+.about-text{
+    margin: 10px;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* Contacts */
+.contacts{
+    background-color: rgba(0,0,0,0.9);
+    height: 40vh;
+}
+.contact-pic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	height: 60vh;
+	width: 100%;
+    margin-top: 5%;
+    background: url(../imagesfinal/bgr.jpg);
+    background-size: cover;
+    position: absolute;
+}
+.icon-info{
+    width: 100px;
+    height: 100px;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 100px;
+}
+.contact-info{
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+    top: 10%;
+    transform: translateY(-50%);
+}
+
+
+
+
+
+
+
+/* Mobile adaptation ///////////////////////////////////////////////////*/
+@media (max-width: 768px) {
+
+/* Slider */
+#slider .image img {
+    height: auto;
+    width: 2615px;
+}  
+#slider #prev,
+#slider #next {
+	display: none;
+}  
+
+
+/* Header */
+.header{
+    height: 100px;
+    width: 2550px;
+}
+.header p{
+    margin-left: 15px;
+    margin-right: 20px;
+    font-size: 30px;
+    padding-top: 33px;
+}
+.navbar{
+    display: flex;
+    height: 200px;
+    padding: 20px;
+    font-size: 35px;
+    align-items: center;
+}
+.navbar-center{
+    margin:0px 620px;
+}
+.navbar-center img{
+    width: 150px;
+    height: 150px;
+    margin-left: 550px;
+}
+/* Icons */
+.icon-1{
+    height: 50px;
+    width: 50px;
+    padding: 15px 10px 5px 5px;
+}
+
+
+/* Option */
+.options{
+    padding: 25px;
+    margin: 20px;
+    width: auto;
+    margin-left: 150px;
+}
+.opti{
+    width: 698px;
+    height: 468px;
+    margin: 25px;
+}
+.home-categ-title{
+    font-size: 35px;
+}
+.mens_sneakers .womens_sneakers .accessories{
+    width: 100%;
+    left: 0;
+    margin: 15px;
+}
+
+
+/* Brends */
+.brends-title , .best-sellers{
+    font-size: 55px;
+}
+.brends{
+    width: 320px;
+    height: 320px;
+    margin-left: 15px;
+}
+.brends-title{
+    padding-left: 1200px;
+}
+
+
+/* Best sellers  */
+.snkrs{
+    width: 2580px;
+    display: inline-flex;
+}
+#p10:hover{
+	width: 600px;
+    height: 600px;
+    padding: 25px;
+}
+#p10{
+	width: 600px;
+    height: 600px;
+    padding: 25px;
+}
+#p20:hover{
+	width: 600px;
+    height: 600px;
+    padding: 25px;
+}
+#p20{
+	width: 600px;
+    height: 600px;
+    padding: 25px;
+}
+#p30:hover{
+	width: 600px;
+    height: 600px;
+    padding: 25px;
+}
+#p30{
+	width: 600px;
+    height: 600px;
+    padding: 25px;
+}
+#p40:hover{
+	width: 600px;
+    height: 600px;
+    padding: 25px;
+}
+#p40{
+	width: 600px;
+    height: 600px;
+    padding: 25px;
+}
+.snk-title{
+    display: inline-flex;
+    width: 600px;
+    height: 400px;
+    padding: 0px 5px;
+    font-size:50px;
+    margin-left: 20px;
+}
+#tit, .price{
+    padding: 10px 10px;
+    font-size: 55px;
+}
+.description{
+    width: 2550px;
+}
+.best-sellers{
+    padding-left: 1200px;
+}
+
+/* Description */
+.about-snkrs{
+    width: 900px;
+    margin: 50px;
+    margin-left: 300px;
+}
+.about-title{
+    width: 2000px;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.about-text{
+    margin: 10px;
+    font-size: 45px;
+    margin-bottom: 50px;
+    width: 2000px;
+}
+
+/* Contacts */
+.contacts{
+    height: 40vh;
+    width: 2610px;
+}
+.contact-pic{
+	height: 60vh;
+	width: 2610px;
+    margin-top: 5%;
+}
+.icon-info{
+    width: 150px;
+    height: 150px;
+}
+.contact-info{
+    top: 20%;
+}
+}
+
+
+
+
+
+/* Mobile adaptation////////////////////////////////////////// */
+@media (max-width: 320px) {
+
+    /* Slider */
+    #slider .image img {
+        height: auto;
+        width: 1280px;
+    }   
+    
+    /* Header */
+    .header{
+        height: 150px;
+        width: 1225px;
+    }
+    .header-right p{
+        display: none;
+    }
+    .navbar-center{
+        margin:0px 0px;
+    }
+    .navbar-right{
+        margin-left: 120px;
+        font-size: 50px;
+    }
+    .icon-1{
+        height: 100px;
+        width: 100px;
+    }
+    .he{
+        display: none;
+    }
+    
+    
+    /* Option */
+    .options{
+        margin-left: 250px;
+        display: block;
+    }
+    .home-categ-title{
+        margin-left: 250px;
+    }
+    
+    
+    /* Brends */
+    .brends-title , .best-sellers{
+        font-size: 50px;
+    }
+    .brends{
+        width: 160px;
+        height: 160px;
+        margin-left: 10px;
+    }
+    .brends-title{
+        padding-left: 650px;
+    }
+    
+    
+    /* Best sellers  */
+    .snkrs{
+        width: 1100px;
+        display: block;
+        padding-left: 120px;
+    }
+    #p10:hover{
+        width: 1000px;
+        height: 1000px;
+        padding: 25px;
+    }
+    #p10{
+        width: 1000px;
+        height: 1000px;
+        padding: 25px;
+    }
+    #p20:hover{
+        width: 1000px;
+        height: 1000px;
+        padding: 25px;
+    }
+    #p20{
+        width: 1000px;
+        height: 1000px;
+        padding: 25px;
+    }
+    #p30:hover{
+        width: 1000px;
+        height: 1000px;
+        padding: 25px;
+    }
+    #p30{
+        width: 1000px;
+        height: 1000px;
+        padding: 25px;
+    }
+    #p40:hover{
+        width: 1000px;
+        height: 1000px;
+        padding: 25px;
+    }
+    #p40{
+        width: 1000px;
+        height: 1000px;
+        padding: 25px;
+    }
+    .snk-title p{
+        display: none;
+        height: 10px;
+    }
+    .snk-title {
+        display: none;
+        height: 10px;
+    }
+    #tit, .price{
+        display: none;
+        height: 10px;
+    }
+    .description{
+        width: 1300px;
+        margin-bottom: 50px;
+    }
+    .best-sellers{
+        padding-left: 650px;
+    }
+    
+    /* Description */
+    .about-snkrs{
+        width: 850px;
+        margin: 50px;
+        margin-left: 100px;
+    }
+    .about-title{
+        width: 850px;
+        font-size: 80px;
+        margin-bottom: 30px;
+        margin-top: 50px;
+    }
+    .about-text{
+        margin: 10px;
+        font-size: 60px;
+        margin-bottom: 50px;
+        width: 1000px;
+    }
+    
+    /* Contacts */
+    .contacts{
+        height: 40vh;
+        width: 1300px;
+    }
+    .contact-pic{
+        height: 60vh;
+        width: 1300px;
+        margin-top: 5%;
+    }
+    .icon-info{
+        width: 150px;
+        height: 150px;
+    }
+    .contact-info{
+        top: 20%;
+    }
+    }
