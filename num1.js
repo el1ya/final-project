@@ -27,13 +27,6 @@ function customSliderStart() {
 		NextSlide();
 	}, 5000);
 }
-function customSliderInit() {
-	let height = theSlides[0].getElementsByTagName('img')[0].height;
-	theWrapper.style.height = height + 'px';
-	for (let i = 0; i < theSlides.length; i ++) {
-		theSlides[i].style.height = height + 'px';
-	}
-}
 if (typeof theSlides !== 'undefined') {
 	window.addEventListener('resize', customSliderInit);
 	customSliderInit();
